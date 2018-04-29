@@ -1,0 +1,16 @@
+<resources>
+    <string name="ADMIN_PASSWORD">admin</string>
+    <string name="ADMIN_LOGIN">admin</string>
+
+    <string name="app_name">AutoShop</string>
+
+    <string-array name="product_categories">
+        <item>Test 1</item>
+        <item>Test 2</item>
+        <item>Test 3</item>
+        <item>Test 4</item>
+        <item>Test 5</item>
+        <item>Test 6</item>
+    </string-array>
+
+</resources>
