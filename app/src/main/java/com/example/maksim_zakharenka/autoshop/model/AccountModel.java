@@ -32,7 +32,7 @@ public final class AccountModel {
 
     public static class Model {
 
-        public static final String TABLE = Model.class.getSimpleName();
+        public static final String TABLE = AccountModel.class.getSimpleName();
 
         public static final String ID = "_id";
 

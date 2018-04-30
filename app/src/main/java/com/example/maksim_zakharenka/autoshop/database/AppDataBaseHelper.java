@@ -12,10 +12,16 @@ public class AppDataBaseHelper extends SQLiteOpenHelper {
 
     public void onCreate(final SQLiteDatabase db) {
         db.execSQL(DatabaseConstants.SQL.SQL_CREATE_ACCOUNT_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_CREATE_MANUFACTURER_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_CREATE_CATEGORY_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_CREATE_PRODUCT_ENTRIES);
     }
 
     public void onUpgrade(final SQLiteDatabase db, final int oldVersion, final int newVersion) {
-        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_ACCOUNT_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_MANUFACTURER_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_CATEGORY_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_PRODUCT_ENTRIES);
         onCreate(db);
     }
 

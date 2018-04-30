@@ -1,4 +1,4 @@
-package com.example.maksim_zakharenka.autoshop.activity;
+package com.example.maksim_zakharenka.autoshop;
 
 import android.content.Context;
 

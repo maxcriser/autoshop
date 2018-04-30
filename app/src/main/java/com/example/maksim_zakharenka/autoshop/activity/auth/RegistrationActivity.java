@@ -1,4 +1,4 @@
-package com.example.maksim_zakharenka.autoshop.activity;
+package com.example.maksim_zakharenka.autoshop.activity.auth;
 
 import android.content.ContentValues;
 import android.database.sqlite.SQLiteDatabase;

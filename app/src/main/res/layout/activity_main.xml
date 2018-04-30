@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.client.MainActivity">
 
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -18,6 +18,7 @@
     <Button
         android:id="@+id/products"
         android:layout_width="match_parent"
+        android:onClick="onProductsClick"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
@@ -28,11 +29,23 @@
     <Button
         android:id="@+id/my_trash"
         android:layout_width="match_parent"
+        android:onClick="onMyTrashClick"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
         android:background="@color/brandColor"
         android:text="Моя корзина"/>
+
+    <Button
+        android:id="@+id/my_profile"
+        android:onClick="onProfileClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/brandColor"
+        android:text="Мой профиль"/>
 
 </LinearLayout>

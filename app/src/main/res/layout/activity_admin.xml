@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.admin.AdminActivity">
 
     <android.support.v7.widget.AppCompatImageView
         android:layout_width="match_parent"
@@ -16,17 +16,8 @@
         app:srcCompat="@drawable/auto_shop_logo"/>
 
     <Button
-        android:id="@+id/products"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Каталог"/>
-
-    <Button
         android:id="@+id/manufacturers"
+        android:onClick="onManufacturersClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -37,16 +28,18 @@
 
     <Button
         android:id="@+id/categories"
+        android:onClick="onCategoriesClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
         android:background="@color/brandColor"
-        android:text="Категорий товара"/>
+        android:text="Категории товара"/>
 
     <Button
         android:id="@+id/clients"
+        android:onClick="onClientsClick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -54,6 +47,17 @@
         android:layout_marginTop="4dp"
         android:background="@color/brandColor"
         android:text="Список клиентов"/>
+
+    <Button
+        android:id="@+id/products"
+        android:onClick="onProductsClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="4dp"
+        android:background="@color/brandColor"
+        android:text="Каталог"/>
 
     <Button
         android:id="@+id/trash"

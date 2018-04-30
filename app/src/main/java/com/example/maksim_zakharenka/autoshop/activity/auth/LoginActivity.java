@@ -1,4 +1,4 @@
-package com.example.maksim_zakharenka.autoshop.activity;
+package com.example.maksim_zakharenka.autoshop.activity.auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,10 +11,8 @@ import com.example.maksim_zakharenka.autoshop.DialogUtils;
 import com.example.maksim_zakharenka.autoshop.R;
 import com.example.maksim_zakharenka.autoshop.StringUtils;
 import com.example.maksim_zakharenka.autoshop.callback.IConfirmation;
-import com.example.maksim_zakharenka.autoshop.executable.AccountsExecutable;
+import com.example.maksim_zakharenka.autoshop.executable.check.CheckAccountCredentialsExecutable;
 import com.example.maksim_zakharenka.autoshop.model.AccountModel;
-
-import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -84,23 +82,12 @@ public class LoginActivity extends AppCompatActivity {
             return;
         }
 
-        final List<AccountModel> accounts = new AccountsExecutable().execute();
-        final boolean isComplete = checkCredentials(accounts, login, password);
+        final AccountModel account = new CheckAccountCredentialsExecutable(login, password).execute();
 
-        if (isComplete) {
+        if (account != null) {
             ActivityUtils.openApp(this, false);
         } else {
             DialogUtils.showErrorDialog(this, "Ошибка авторизации", "Неверный логин или пароль.");
         }
-    }
-
-    private boolean checkCredentials(final List<AccountModel> pAccountModels, final String pLogin, final String pPassword) {
-        for (final AccountModel accountModel : pAccountModels) {
-            if (accountModel.getLogin().equals(pLogin) && accountModel.getPassword().equals(pPassword)) {
-                return true;
-            }
-        }
-
-        return false;
     }
 }
