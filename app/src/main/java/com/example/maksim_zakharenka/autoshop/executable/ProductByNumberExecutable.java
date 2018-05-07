@@ -7,20 +7,17 @@ import com.example.maksim_zakharenka.autoshop.database.AppDataBaseHelper;
 import com.example.maksim_zakharenka.autoshop.database.DatabaseHolder;
 import com.example.maksim_zakharenka.autoshop.model.ProductModel;
 
-import java.util.ArrayList;
-import java.util.List;
-
-public class ProductsExecutable {
+public class ProductByNumberExecutable {
 
     private final AppDataBaseHelper mAppDataBaseHelper;
+    private final String mNumber;
 
-    public ProductsExecutable() {
+    public ProductByNumberExecutable(final String pNumber) {
         mAppDataBaseHelper = DatabaseHolder.get();
+        mNumber = pNumber;
     }
 
-    public List<ProductModel> execute() {
-        final List<ProductModel> list = new ArrayList<>();
-
+    public ProductModel execute() {
         final SQLiteDatabase db = mAppDataBaseHelper.getReadableDatabase();
 
         final String[] projection = {
@@ -33,8 +30,8 @@ public class ProductsExecutable {
                 ProductModel.Model.CATEGORY
         };
 
-        final String selection = ProductModel.Model.COUNT + " > ?";
-        final String[] selectionArgs = new String[]{"0"};
+        final String selection = ProductModel.Model.NUMBER + " = ?";
+        final String[] selectionArgs = new String[]{mNumber};
 
         final Cursor cursor = db.query(
                 ProductModel.Model.TABLE,
@@ -54,12 +51,12 @@ public class ProductsExecutable {
             final int count = cursor.getInt(cursor.getColumnIndexOrThrow(ProductModel.Model.COUNT));
             final int price = cursor.getInt(cursor.getColumnIndexOrThrow(ProductModel.Model.PRICE));
 
-            list.add(new ProductModel(name, category, description, number, count, price));
+            return new ProductModel(name, category, description, number, count, price);
         }
 
         cursor.close();
         db.close();
 
-        return list;
+        return null;
     }
 }

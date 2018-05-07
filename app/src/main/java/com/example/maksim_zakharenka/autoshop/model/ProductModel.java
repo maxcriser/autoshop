@@ -7,13 +7,15 @@ public final class ProductModel {
     private final String mDescription;
     private final String mNumber;
     private final int mCount;
+    private final int mPrice;
 
-    public ProductModel(final String pName, final String pCategory, final String pDescription, final String pNumber, final int pCount) {
+    public ProductModel(final String pName, final String pCategory, final String pDescription, final String pNumber, final int pCount, final int pPrice) {
         mName = pName;
         mCategory = pCategory;
         mDescription = pDescription;
         mNumber = pNumber;
         mCount = pCount;
+        mPrice = pPrice;
     }
 
     public int getCount() {
@@ -36,6 +38,10 @@ public final class ProductModel {
         return mNumber;
     }
 
+    public int getPrice() {
+        return mPrice;
+    }
+
     public static class Model {
 
         public static final String TABLE = ProductModel.class.getSimpleName();
@@ -51,5 +57,7 @@ public final class ProductModel {
         public static final String DESCRIPTION = "description";
 
         public static final String NUMBER = "number";
+
+        public static final String PRICE = "price";
     }
 }

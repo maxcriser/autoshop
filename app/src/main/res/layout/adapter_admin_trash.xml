@@ -31,7 +31,7 @@
                 android:padding="16dp">
 
                 <TextView
-                    android:id="@+id/name"
+                    android:id="@+id/client"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="16sp"
@@ -39,40 +39,10 @@
                     tools:text="название"/>
 
                 <TextView
-                    android:id="@+id/category"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="категория"/>
-
-                <TextView
-                    android:id="@+id/description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    tools:text="описание"/>
-
-                <TextView
                     android:id="@+id/number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     tools:text="уникальный номер"/>
-
-                <LinearLayout
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:id="@+id/price"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text="уникальный номер"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:text=" $"/>
-
-                </LinearLayout>
 
             </LinearLayout>
 

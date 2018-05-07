@@ -12,7 +12,7 @@ import com.example.maksim_zakharenka.autoshop.model.ProductModel;
 
 import java.util.List;
 
-public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdapter.AdminProductsViewHolder> {
+public class MyTrashAdapter extends RecyclerView.Adapter<MyTrashAdapter.AdminProductsViewHolder> {
 
     private final List<ProductModel> mList;
 
@@ -23,28 +23,26 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
         TextView mDescription;
         TextView mNumber;
         TextView mPrice;
-        TextView mCount;
 
         AdminProductsViewHolder(final View view) {
             super(view);
 
-            mName = (TextView) view.findViewById(R.id.name);
-            mCategory = (TextView) view.findViewById(R.id.category);
-            mDescription = (TextView) view.findViewById(R.id.description);
-            mNumber = (TextView) view.findViewById(R.id.number);
-            mCount = (TextView) view.findViewById(R.id.count);
-            mPrice = (TextView) view.findViewById(R.id.price);
+            mName = view.findViewById(R.id.name);
+            mCategory = view.findViewById(R.id.category);
+            mDescription = view.findViewById(R.id.description);
+            mNumber = view.findViewById(R.id.number);
+            mPrice = view.findViewById(R.id.price);
         }
     }
 
-    public AdminProductsAdapter(final List<ProductModel> mList) {
+    public MyTrashAdapter(final List<ProductModel> mList) {
         this.mList = mList;
     }
 
     @NonNull
     @Override
     public AdminProductsViewHolder onCreateViewHolder(@NonNull final ViewGroup parent, final int viewType) {
-        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_admin_products, parent, false);
+        final View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.adapter_my_trash, parent, false);
 
         return new AdminProductsViewHolder(itemView);
     }
@@ -57,8 +55,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
         holder.mCategory.setText(item.getCategory());
         holder.mDescription.setText(item.getDescription());
         holder.mNumber.setText(item.getNumber());
-        holder.mCount.setText(String.valueOf(item.getCount()));
-        holder.mPrice.setText(String.valueOf(item.getPrice()));
+        holder.mPrice.setText(String.valueOf(item.getPrice() * item.getCount()));
     }
 
     @Override

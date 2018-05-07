@@ -4,6 +4,7 @@ import com.example.maksim_zakharenka.autoshop.model.AccountModel;
 import com.example.maksim_zakharenka.autoshop.model.CategoryModel;
 import com.example.maksim_zakharenka.autoshop.model.ManufacturerModel;
 import com.example.maksim_zakharenka.autoshop.model.ProductModel;
+import com.example.maksim_zakharenka.autoshop.model.TrashModel;
 
 public class DatabaseConstants {
 
@@ -48,13 +49,24 @@ public class DatabaseConstants {
         String SQL_CREATE_PRODUCT_ENTRIES =
                 "CREATE TABLE " + ProductModel.Model.TABLE + " (" +
                         ProductModel.Model.ID + " INTEGER PRIMARY KEY," +
-                        ProductModel.Model.COUNT + " INTEGER PRIMARY KEY," +
+                        ProductModel.Model.COUNT + " INT," +
                         ProductModel.Model.NAME + " TEXT," +
+                        ProductModel.Model.PRICE + " TEXT," +
                         ProductModel.Model.DESCRIPTION + " TEXT," +
                         ProductModel.Model.NUMBER + " TEXT," +
                         ProductModel.Model.CATEGORY + " TEXT)";
 
         String SQL_DELETE_PRODUCT_ENTRIES =
                 "DROP TABLE IF EXISTS " + ProductModel.Model.TABLE;
+
+        String SQL_CREATE_TRASH_ENTRIES =
+                "CREATE TABLE " + TrashModel.Model.TABLE + " (" +
+                        TrashModel.Model.ID + " INTEGER PRIMARY KEY," +
+                        TrashModel.Model.COUNT + " INT," +
+                        TrashModel.Model.CLIENT + " TEXT," +
+                        ProductModel.Model.NUMBER + " TEXT)";
+
+        String SQL_DELETE_TRASH_ENTRIES =
+                "DROP TABLE IF EXISTS " + TrashModel.Model.TABLE;
     }
 }

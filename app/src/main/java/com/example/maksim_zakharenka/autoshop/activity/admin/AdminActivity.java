@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.example.maksim_zakharenka.autoshop.LogOutCallback;
 import com.example.maksim_zakharenka.autoshop.R;
 
 public class AdminActivity extends AppCompatActivity {
@@ -23,6 +24,14 @@ public class AdminActivity extends AppCompatActivity {
 
     public void onProductsClick(final View view) {
         startActivity(new Intent(this, AdminProductsActivity.class));
+    }
+
+    public void onTrashClick(final View view) {
+        startActivity(new Intent(this, AdminTrashActivity.class));
+    }
+
+    public void onLogOut(final View view) {
+        LogOutCallback.onLogOut(getBaseContext());
     }
 
     @Override

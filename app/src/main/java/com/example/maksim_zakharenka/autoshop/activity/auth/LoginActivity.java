@@ -7,6 +7,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.example.maksim_zakharenka.autoshop.ActivityUtils;
+import com.example.maksim_zakharenka.autoshop.AppSettings;
 import com.example.maksim_zakharenka.autoshop.DialogUtils;
 import com.example.maksim_zakharenka.autoshop.R;
 import com.example.maksim_zakharenka.autoshop.StringUtils;
@@ -50,6 +51,16 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(new Intent(LoginActivity.this, RegistrationActivity.class));
             }
         });
+
+        final String usernameSaved = AppSettings.getUserName();
+        final String passwordSaved = AppSettings.getPassword();
+
+        if (!StringUtils.isEmpty(usernameSaved) && !StringUtils.isEmpty(passwordSaved)) {
+            mLogin.setText(usernameSaved);
+            mPassword.setText(passwordSaved);
+
+            mLoginButton.performClick();
+        }
     }
 
     private void processLogin() {
@@ -70,7 +81,7 @@ public class LoginActivity extends AppCompatActivity {
 
                 @Override
                 public void onConfirm() {
-                    ActivityUtils.openApp(LoginActivity.this, true);
+                    ActivityUtils.openApp(LoginActivity.this, true, login, password);
                 }
 
                 @Override
@@ -85,7 +96,7 @@ public class LoginActivity extends AppCompatActivity {
         final AccountModel account = new CheckAccountCredentialsExecutable(login, password).execute();
 
         if (account != null) {
-            ActivityUtils.openApp(this, false);
+            ActivityUtils.openApp(this, false, login, password);
         } else {
             DialogUtils.showErrorDialog(this, "Ошибка авторизации", "Неверный логин или пароль.");
         }

@@ -30,6 +30,11 @@
         <activity android:name=".activity.admin.CategoriesActivity"/>
         <activity android:name=".activity.admin.ClientsActivity"/>
         <activity android:name=".activity.admin.AdminProductsActivity"/>
+        <activity android:name=".activity.admin.AdminTrashActivity"/>
+
+        <activity android:name=".activity.client.MyProfileActivity"/>
+        <activity android:name=".activity.client.ProductsActivity"/>
+        <activity android:name=".activity.client.MyTrashActivity"/>
     </application>
 
 </manifest>

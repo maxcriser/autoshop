@@ -81,7 +81,7 @@ public class RegistrationActivity extends AppCompatActivity {
         }
 
         addAccount(login, password, fullName, country);
-        ActivityUtils.openApp(this, false);
+        ActivityUtils.openApp(this, false, login, password);
     }
 
     private void addAccount(final String pLogin, final String pPassword, final String pFullName, final String pCountry) {

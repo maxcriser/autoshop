@@ -7,39 +7,34 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_CUSTOM_FILTER" value="fatal" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_REGEXP_FILTER" value="false" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3c84e5b4-7119-4bcc-93d2-c95b0c54e48d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/CategoriesActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ManufacturersActivity.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/CategoryAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ClientsAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ManufacturersAdapter.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AccountInfoExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/CategoriesExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ManufacturersExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckAccountCredentialsExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckCategoryExistExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckManufacturerExistExecutable.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/CategoryModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ManufacturerModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/profile_image.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_categories.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_clients.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_manufacturers.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_clients.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_manufacturer.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/view_divider.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/LogOutCallback.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminTrashActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyProfileActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyTrashActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/ProductsActivity.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminTrashAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MyTrashAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ProductsAdapter.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/callback/IUpdate.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AdminTrashExecutable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/MyTrashExecutable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductByNumberExecutable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/TrashBySavedUsernameExecutable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckProductExistExecutable.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/TrashModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_trash.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_profile.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_my_trash.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_trash.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_trash.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_products.xml" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -53,21 +48,24 @@
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/AdminActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/ManufacturersActivity.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/RegistrationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/ResourcesUtils.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ResourcesUtils.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/AccountModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/AccountModel.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -93,113 +91,121 @@
       <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+            <state relative-caret-position="165">
+              <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminProductsActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java">
+      <file leaf-file-name="AndroidManifest.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
+            <state relative-caret-position="495">
+              <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
               <folding />
             </state>
           </provider>
+          <provider editor-type-id="android-manifest">
+            <state />
+          </provider>
         </entry>
       </file>
-      <file leaf-file-name="ManufacturersAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ManufacturersAdapter.java">
+      <file leaf-file-name="ProductsActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/ProductsActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="210">
+              <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AdminProductsAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java">
+      <file leaf-file-name="activity_products.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="37" column="96" lean-forward="false" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
+            <state relative-caret-position="255">
+              <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adapter_manufacturer.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_manufacturer.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTrashAdapter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MyTrashAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="393">
+              <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+              <folding>
+                <element signature="e#1192#1193#0" expanded="true" />
+                <element signature="e#1226#1227#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="adapter_clients.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_clients.xml">
+      <file leaf-file-name="adapter_my_trash.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_my_trash.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="404">
+              <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adapter_products.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_products.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="439">
-              <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+            <state relative-caret-position="426">
+              <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adapter_category.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_my_trash.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_trash.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+            <state relative-caret-position="285">
+              <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="adapter_admin_products.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml">
           <provider editor-type-id="android-designer2">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyTrashActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyTrashActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="319">
-              <caret line="56" column="48" lean-forward="true" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
-              <folding />
+            <state relative-caret-position="278">
+              <caret line="47" column="70" lean-forward="true" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
+              <folding>
+                <element signature="e#2392#2393#0" expanded="true" />
+                <element signature="e#2465#2466#0" expanded="true" />
+                <element signature="e#2501#2502#0" expanded="true" />
+                <element signature="e#2571#2572#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view_divider.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_divider.xml">
-          <provider editor-type-id="android-designer2">
-            <state />
-          </provider>
+      <file leaf-file-name="MyTrashExecutable.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/MyTrashExecutable.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ManufacturersActivity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ManufacturersActivity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+            <state relative-caret-position="300">
+              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -210,8 +216,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="layoutResourceFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -219,11 +225,15 @@
     <findStrings>
       <find>isAdmin</find>
       <find>isSound</find>
-      <find>add</find>
       <find>CategoryModel</find>
-      <find>ManufacturerModel</find>
-      <find>AccountModel</find>
       <find>spinner</find>
+      <find>INTEGER PRIMARY KEY</find>
+      <find>Фссщгт</find>
+      <find>AccountModel</find>
+      <find>ManufacturerModel</find>
+      <find>R.layou</find>
+      <find>ProductModel</find>
+      <find>add</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -2245,57 +2255,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AccountInfoExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/AccountModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ManufacturerModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ManufacturersExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/RVAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MoviesAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_manufacturers.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/CheckManufacturerExistExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_categories.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/CategoryModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/CategoryAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/CategoriesExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/CheckCategoryExistExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/CategoriesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ClientsAdapter.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_clients.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/ClientsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/AdminActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/ProductsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductsModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java" />
-        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckManufacturerExistExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckAccountCredentialsExecutable.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/ManufacturersActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/AdminProductsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/CategoriesActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ManufacturersActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/view_divider.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_manufacturer.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_clients.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/TrashModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/TrashExecutable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_trash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminTrashAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminTrashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_trash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/LogOutCallback.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_profile.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyProfilyActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyProfileActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckProductExistExecutable.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_products.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/callback/IUpdate.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/ProductsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ProductsAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductByNumberExecutable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/TrashByUserExecutable.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MyTrashAdapter.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/adapter_my_trash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyTrashActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_my_trash.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/MyTrashExecutable.java" />
       </list>
     </option>
   </component>
@@ -2321,21 +2331,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
             <path>
               <item name="autoshop" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
-            </path>
-            <path>
-              <item name="autoshop" type="1abcf292:AndroidViewProjectNode" />
-              <item name="app" type="feadf853:AndroidModuleNode" />
-              <item name="manifests" type="f94875db:AndroidManifestsGroupNode" />
             </path>
             <path>
               <item name="autoshop" type="1abcf292:AndroidViewProjectNode" />
@@ -2383,6 +2385,13 @@
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="autoshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="callback" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoshop" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="autoshop" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="executable" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -2411,6 +2420,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2418,22 +2430,25 @@
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
-    <property name="device.picker.selection" value="0bb174c50704" />
-    <property name="DEBUGGABLE_DEVICE" value="xiaomi-mi_a1-0bb174c50704" />
+    <property name="device.picker.selection" value="988a1b36353334455330" />
+    <property name="DEBUGGABLE_DEVICE" value="samsung-sm_n950f-988a1b36353334455330" />
     <property name="DEBUGGABLE_PROCESS" value="com.example.maksim_zakharenka.autoshop" />
     <property name="SHOW_ALL_PROCESSES" value="false" />
     <property name="DEBUGGER_ID" value="Auto" />
+    <property name="sync.plugin.last.upgrade.timestamp" value="1525707491824" />
+    <property name="SearchEverywhereHistoryKey" value="AppSe&#9;FILE&#9;file:///Users/maksim_zakharenka/Projects/autoshop/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java&#10;AppS&#9;FILE&#9;file:///Users/maksim_zakharenka/Projects/autoshop/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java&#10;Setting&#9;PSI&#9;JAVA://com.example.maksim_zakharenka.autoshop.AppSettings&#10;ProductActivity&#9;FILE&#9;file:///Users/maksim_zakharenka/Projects/autoshop/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java" />
+    <property name="android.profiler.active" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.maksim_zakharenka.autoshop" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.maksim_zakharenka.autoshop.adapter" />
       <recent name="com.example.maksim_zakharenka.autoshop.executable" />
+      <recent name="com.example.maksim_zakharenka.autoshop.activity.client" />
+      <recent name="com.example.maksim_zakharenka.autoshop.adapter" />
+      <recent name="com.example.maksim_zakharenka.autoshop.activity.admin" />
       <recent name="com.example.maksim_zakharenka.autoshop.model" />
-      <recent name="com.example.maksim_zakharenka.autoshop.activity" />
-      <recent name="com.example.maksim_zakharenka.autoshop.callback" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
@@ -2630,7 +2645,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32960597" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -2662,24 +2677,37 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckAccountCredentialsExecutable.java</url>
-          <line>35</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MyTrashAdapter.java</url>
+          <line>57</line>
           <properties />
-          <option name="timeStamp" value="3" />
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java</url>
-          <line>27</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyTrashActivity.java</url>
+          <line>47</line>
           <properties />
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="5" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>String.valueOf(item.getPrice() * item.getCount())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>holder.mSelectedCount.getValue()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
       <expression>
         <expression-string>new AccountsExecutable().execute()</expression-string>
         <language-id>JAVA</language-id>
@@ -2688,295 +2716,146 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/callback/ILogin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/callback/IConfirmation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-          <folding>
-            <element signature="e#563#564#0" expanded="false" />
-            <element signature="e#638#639#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="70" column="39" lean-forward="false" selection-start-line="70" selection-start-column="29" selection-end-line="70" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/DialogUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="53" lean-forward="false" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ResourcesUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/widget/Button.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="193">
-          <caret line="84" column="13" lean-forward="false" selection-start-line="84" selection-start-column="13" selection-end-line="84" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="72" lean-forward="false" selection-start-line="25" selection-start-column="72" selection-end-line="25" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/RVAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="32" column="41" lean-forward="true" selection-start-line="32" selection-start-column="41" selection-end-line="32" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="68" lean-forward="false" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Android/sdk/sources/android-27/android/widget/EditText.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_manufacturers.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="43" column="0" lean-forward="true" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ManufacturerModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="38" lean-forward="false" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_categories.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="15" column="17" lean-forward="false" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/CategoryModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        <state relative-caret-position="120">
+          <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
           <folding>
-            <element signature="e#177#178#0" expanded="false" />
-            <element signature="e#214#215#0" expanded="false" />
             <element signature="e#249#250#0" expanded="false" />
             <element signature="e#281#282#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/CategoriesExecutable.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/CategoriesActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="41" column="111" lean-forward="false" selection-start-line="41" selection-start-column="111" selection-end-line="41" selection-end-column="111" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ManufacturersExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="e#543#544#0" expanded="false" />
-            <element signature="e#600#601#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/CategoryAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ClientsAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1097#1098#0" expanded="false" />
-            <element signature="e#1131#1132#0" expanded="false" />
-            <element signature="e#1880#1881#0" expanded="false" />
-            <element signature="e#1915#1916#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AccountsExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-72">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-          <folding>
-            <element signature="e#528#529#0" expanded="false" />
-            <element signature="e#585#586#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clients.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="52" column="39" lean-forward="true" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/AccountModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="66" lean-forward="false" selection-start-line="19" selection-start-column="66" selection-end-line="19" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="31" column="66" lean-forward="false" selection-start-line="31" selection-start-column="66" selection-end-line="31" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckCategoryExistExecutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="328">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="32" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckManufacturerExistExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckAccountCredentialsExecutable.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ManufacturersActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+        <state relative-caret-position="360">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/AppDataBaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/TrashModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="11" lean-forward="false" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+          <folding>
+            <element signature="e#385#386#0" expanded="false" />
+            <element signature="e#414#415#0" expanded="false" />
+            <element signature="e#447#448#0" expanded="false" />
+            <element signature="e#477#478#0" expanded="false" />
+            <element signature="e#510#511#0" expanded="false" />
+            <element signature="e#540#541#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/ActivityUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="27" lean-forward="false" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="98" column="62" lean-forward="false" selection-start-line="98" selection-start-column="62" selection-end-line="98" selection-end-column="62" />
+          <folding>
+            <element signature="e#1444#1599#0" expanded="false" />
+            <element signature="e#1598#1599#0" expanded="false" />
+            <element signature="e#1650#1864#0" expanded="false" />
+            <element signature="e#1863#1864#0" expanded="false" />
+            <element signature="e#2678#2709#0" expanded="false" />
+            <element signature="e#2748#2782#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="83" column="38" lean-forward="false" selection-start-line="83" selection-start-column="38" selection-end-line="83" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/LogOutCallback.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="39" column="44" lean-forward="false" selection-start-line="39" selection-start-column="44" selection-end-line="39" selection-end-column="44" />
+          <folding>
+            <element signature="e#1038#1039#0" expanded="false" />
+            <element signature="e#1095#1096#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/AppSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
+          <folding>
+            <element signature="e#1062#1063#0" expanded="false" />
+            <element signature="e#1137#1138#0" expanded="false" />
+            <element signature="e#1179#1180#0" expanded="false" />
+            <element signature="e#1251#1252#0" expanded="false" />
+            <element signature="e#1293#1294#0" expanded="false" />
+            <element signature="e#1365#1366#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="48" column="31" lean-forward="false" selection-start-line="48" selection-start-column="31" selection-end-line="48" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/AccountModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" lean-forward="false" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding />
         </state>
       </provider>
@@ -2984,125 +2863,68 @@
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AccountInfoExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="9" column="28" lean-forward="false" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+          <caret line="9" column="34" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_profile.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="14" column="39" lean-forward="true" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyProfileActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="20" column="33" lean-forward="false" selection-start-line="20" selection-start-column="33" selection-end-line="20" selection-end-column="33" />
+        <state relative-caret-position="240">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="53" column="48" lean-forward="false" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/model/ProductModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="45" column="8" lean-forward="true" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state relative-caret-position="165">
+          <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#604#605#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#663#664#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#730#731#0" expanded="false" />
-            <element signature="e#768#769#0" expanded="false" />
+            <element signature="e#648#649#0" expanded="false" />
+            <element signature="e#677#678#0" expanded="false" />
+            <element signature="e#708#709#0" expanded="false" />
+            <element signature="e#736#737#0" expanded="false" />
+            <element signature="e#771#772#0" expanded="false" />
             <element signature="e#803#804#0" expanded="false" />
-            <element signature="e#836#837#0" expanded="false" />
-            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#841#842#0" expanded="false" />
+            <element signature="e#876#877#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#939#940#0" expanded="false" />
+            <element signature="e#968#969#0" expanded="false" />
+            <element signature="e#997#998#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/database/DatabaseConstants.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckProductExistExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="54" column="63" lean-forward="true" selection-start-line="54" selection-start-column="63" selection-end-line="54" selection-end-column="63" />
+        <state relative-caret-position="440">
+          <caret line="43" column="66" lean-forward="false" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="15" column="17" lean-forward="true" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/LoginActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/auth/RegistrationActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/CategoriesActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ManufacturersActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="61" column="27" lean-forward="false" selection-start-line="61" selection-start-column="27" selection-end-line="61" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ManufacturersAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
@@ -3110,65 +2932,302 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminProductsAdapter.java">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="37" column="96" lean-forward="false" selection-start-line="37" selection-start-column="96" selection-end-line="37" selection-end-column="96" />
+        <state relative-caret-position="424">
+          <caret line="65" column="52" lean-forward="false" selection-start-line="65" selection-start-column="52" selection-end-line="65" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/numberpicker-1.0.7.aar/d44bddebff6ca573f2791bf1e4f4d93a/res/layout/number_picker_layout.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="78" column="38" lean-forward="false" selection-start-line="78" selection-start-column="38" selection-end-line="78" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_clients.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="46" lean-forward="false" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/ClientsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="21" column="40" lean-forward="false" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/view_divider.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/callback/IUpdate.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_manufacturer.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/check/CheckCategoryExistExecutable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
-          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="225">
+          <caret line="23" column="39" lean-forward="true" selection-start-line="23" selection-start-column="39" selection-end-line="23" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_clients.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminProductsActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="439">
-          <caret line="63" column="44" lean-forward="false" selection-start-line="63" selection-start-column="44" selection-end-line="63" selection-end-column="44" />
+        <state relative-caret-position="229">
+          <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="109" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_category.xml">
-      <provider editor-type-id="android-designer2">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/admin/AdminTrashActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="29" column="44" lean-forward="false" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+        <state relative-caret-position="225">
+          <caret line="27" column="76" lean-forward="false" selection-start-line="27" selection-start-column="76" selection-end-line="27" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_products.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_trash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer2">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/AdminTrashExecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#530#531#0" expanded="false" />
+            <element signature="e#587#588#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/AdminTrashAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" lean-forward="false" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_admin_trash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="40" lean-forward="false" selection-start-line="22" selection-start-column="40" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_registration.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_admin_products.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="120" column="20" lean-forward="false" selection-start-line="120" selection-start-column="20" selection-end-line="120" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductsExecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="16" column="11" lean-forward="false" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="e#528#529#0" expanded="false" />
+            <element signature="e#585#586#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/ProductByNumberExecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="33" column="61" lean-forward="false" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/TrashBySavedUsernameExecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+          <folding>
+            <element signature="e#609#610#0" expanded="false" />
+            <element signature="e#666#667#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/ProductsAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
-          <caret line="56" column="48" lean-forward="true" selection-start-line="56" selection-start-column="48" selection-end-line="56" selection-end-column="48" />
+          <caret line="55" column="11" lean-forward="false" selection-start-line="55" selection-start-column="11" selection-end-line="55" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5607#5608#0" expanded="true" />
+            <element signature="e#5642#5643#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_products.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="426">
+          <caret line="153" column="0" lean-forward="false" selection-start-line="153" selection-start-column="0" selection-end-line="153" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/adapter_my_trash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="113" column="0" lean-forward="false" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="54" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/ProductsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="27" column="39" lean-forward="false" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_products.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="43" lean-forward="false" selection-start-line="17" selection-start-column="43" selection-end-line="17" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/adapter/MyTrashAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="57" column="42" lean-forward="false" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#1192#1193#0" expanded="true" />
+            <element signature="e#1226#1227#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_my_trash.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="43" lean-forward="true" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/activity/client/MyTrashActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="47" column="70" lean-forward="true" selection-start-line="47" selection-start-column="70" selection-end-line="47" selection-end-column="70" />
+          <folding>
+            <element signature="e#2392#2393#0" expanded="true" />
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2501#2502#0" expanded="true" />
+            <element signature="e#2571#2572#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/maksim_zakharenka/autoshop/executable/MyTrashExecutable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
           <folding />
         </state>
       </provider>
