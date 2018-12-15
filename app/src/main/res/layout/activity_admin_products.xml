@@ -1,125 +1,151 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brandColor"
     android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".activity.admin.AdminProductsActivity">
+    android:padding="16dp">
 
-    <LinearLayout
+    <com.example.maksim_zakharenka.autoshop.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Название:"/>
-
-        <EditText
-            android:id="@+id/name_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="Рычаг"/>
-
-    </LinearLayout>
-
-    <Spinner
-        android:id="@+id/category_spinner"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_marginBottom="24dp" />
 
     <LinearLayout
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Описание:"/>
-
-        <EditText
-            android:id="@+id/description_edittext"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Задний рычаг для ford kuga"/>
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Название:"
+                android:textColor="@android:color/darker_gray" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/name_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Рычаг" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="№ товара:"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/number_edittext"
+        <Spinner
+            android:id="@+id/category_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="23-JFD-4832"/>
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Описание:"
+                android:textColor="@android:color/darker_gray" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/description_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Задний рычаг для ford kuga" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Количество единиц:"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/count_edittext"
-            android:inputType="number"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="55"/>
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="№ товара:"
+                android:textColor="@android:color/darker_gray" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/number_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="23-JFD-4832" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Цена за единицу:"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/price_edittext"
-            android:inputType="number"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="55"/>
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Количество единиц:"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/count_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                tools:text="55" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Цена за единицу:"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/price_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                tools:text="55" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
     <Button
         android:id="@+id/add_button"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
+        android:layout_marginBottom="16dp"
         android:onClick="onAddProduct"
-        android:text="Добавить товар"/>
+        android:text="Добавить товар" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/products_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

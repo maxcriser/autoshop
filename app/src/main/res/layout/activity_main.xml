@@ -1,62 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brandColor"
     android:orientation="vertical"
     tools:context=".activity.client.MainActivity">
 
-    <android.support.v7.widget.AppCompatImageView
+    <com.example.maksim_zakharenka.autoshop.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/auto_shop_logo"/>
+        android:layout_marginBottom="24dp" />
 
     <Button
         android:id="@+id/products"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
-        android:onClick="onProductsClick"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Перейти к каталогу"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onProductsClick"
+        android:text="Перейти к каталогу" />
 
     <Button
         android:id="@+id/my_trash"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
-        android:onClick="onMyTrashClick"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Моя корзина"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onMyTrashClick"
+        android:text="Моя корзина" />
 
     <Button
         android:id="@+id/my_profile"
-        android:onClick="onProfileClick"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Мой профиль"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onProfileClick"
+        android:text="Мой профиль" />
 
     <Button
         android:id="@+id/logout"
-        android:onClick="onLogOut"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Выход"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onLogOut"
+        android:text="Выход" />
 
 </LinearLayout>

@@ -1,84 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".activity.admin.AdminActivity">
+    android:background="@color/brandColor"
+    android:orientation="vertical">
 
-    <android.support.v7.widget.AppCompatImageView
+    <com.example.maksim_zakharenka.autoshop.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/auto_shop_logo"/>
+        android:layout_marginBottom="24dp" />
 
     <Button
         android:id="@+id/manufacturers"
-        android:onClick="onManufacturersClick"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Производители"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onManufacturersClick"
+        android:text="Производители" />
 
     <Button
         android:id="@+id/categories"
-        android:onClick="onCategoriesClick"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Категории товара"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onCategoriesClick"
+        android:text="Категории товара" />
 
     <Button
         android:id="@+id/clients"
-        android:onClick="onClientsClick"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Список клиентов"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onClientsClick"
+        android:text="Список клиентов" />
 
     <Button
         android:id="@+id/products"
-        android:onClick="onProductsClick"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Каталог"/>
+        android:layout_marginRight="16dp"
+        android:onClick="onProductsClick"
+        android:text="Каталог" />
 
     <Button
         android:id="@+id/trash"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
         android:onClick="onTrashClick"
-        android:background="@color/brandColor"
-        android:text="Просмотр заказов"/>
+        android:text="Просмотр заказов" />
 
     <Button
         android:id="@+id/logout"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
         android:onClick="onLogOut"
-        android:background="@color/brandColor"
-        android:text="Выход"/>
+        android:text="Выход" />
 
 </LinearLayout>

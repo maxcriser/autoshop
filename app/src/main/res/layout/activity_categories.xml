@@ -1,46 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brandColor"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activity.admin.ManufacturersActivity">
 
-    <LinearLayout
+    <com.example.maksim_zakharenka.autoshop.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginBottom="24dp" />
+
+    <LinearLayout
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Категория:"/>
+            android:layout_marginRight="8dp"
+            android:text="Категория:"
+            android:textColor="@android:color/darker_gray" />
 
         <EditText
             android:id="@+id/categiry_edittext"
+            style="@style/ButtonStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Nissan"/>
+            tools:text="Nissan" />
 
     </LinearLayout>
 
     <Button
         android:id="@+id/add_button"
-        android:onClick="onAddManufacturer"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Добавить категорию"/>
+        android:layout_marginBottom="16dp"
+        android:onClick="onAddManufacturer"
+        android:text="Добавить категорию" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/categories_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

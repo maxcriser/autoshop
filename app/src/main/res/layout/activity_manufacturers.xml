@@ -1,82 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/brandColor"
     android:orientation="vertical"
     android:padding="16dp"
     tools:context=".activity.admin.ManufacturersActivity">
 
-    <LinearLayout
+    <com.example.maksim_zakharenka.autoshop.Toolbar
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Название:"/>
-
-        <EditText
-            android:id="@+id/name_edittext"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            tools:text="Nissan"/>
-
-    </LinearLayout>
+        android:layout_marginBottom="24dp" />
 
     <LinearLayout
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical"
+        android:padding="16dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Страна:"/>
-
-        <EditText
-            android:id="@+id/country_edittext"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="Belarus"/>
+            android:orientation="horizontal">
 
-    </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Название:"
+                android:textColor="@android:color/darker_gray" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+            <EditText
+                android:id="@+id/name_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nissan" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Сайт:"/>
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/site_edittext"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            tools:text="www.Nissan.com"/>
+            android:orientation="horizontal">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+
+                android:text="Страна:"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/country_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                tools:text="Belarus" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:text="Сайт:"
+                android:textColor="@android:color/darker_gray" />
+
+            <EditText
+                android:id="@+id/site_edittext"
+                style="@style/ButtonStyle"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                tools:text="www.Nissan.com" />
+
+        </LinearLayout>
     </LinearLayout>
 
     <Button
         android:id="@+id/add_button"
-        android:onClick="onAddManufacturer"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="4dp"
-        android:background="@color/brandColor"
-        android:text="Добавить производителя"/>
+        android:layout_marginBottom="16dp"
+        android:onClick="onAddManufacturer"
+        android:text="Добавить производителя" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/manufacturers_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

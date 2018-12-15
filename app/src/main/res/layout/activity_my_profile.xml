@@ -1,44 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="@color/brandColor"
     android:orientation="vertical"
     tools:context=".activity.client.MainActivity">
 
-    <android.support.v7.widget.AppCompatImageView
-        android:layout_width="112dp"
-        android:layout_height="112dp"
-        android:layout_gravity="center"
-        android:scaleType="centerCrop"
-        app:srcCompat="@drawable/profile_image"/>
-
-    <TextView
-        android:id="@+id/login"
-        android:layout_width="wrap_content"
+    <com.example.maksim_zakharenka.autoshop.Toolbar
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        tools:text="MyLogin"/>
+        android:layout_marginBottom="24dp" />
 
-    <TextView
-        android:id="@+id/full_name"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:textSize="18sp"
-        tools:text="Zakharenka Maksim Vyacheslavovich"/>
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:padding="16dp">
 
-    <TextView
-        android:id="@+id/country"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:textSize="16sp"
-        tools:text="BLR"/>
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="112dp"
+            android:layout_height="112dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/profile_image" />
+
+        <TextView
+            android:id="@+id/login"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Maxim" />
+
+        <TextView
+            android:id="@+id/full_name"
+
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:textSize="18sp"
+            tools:text="Zakharenka Maksim Vyacheslavovich" />
+
+        <TextView
+            android:id="@+id/country"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:textSize="16sp"
+            tools:text="BLR" />
+
+    </LinearLayout>
+
 
 </LinearLayout>
