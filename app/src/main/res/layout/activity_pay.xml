@@ -26,14 +26,14 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:text="Название:"/>
+                android:text="Адрес:"
+                android:textColor="@android:color/darker_gray"/>
 
             <EditText
-                android:id="@+id/name_edittext"
+                android:id="@+id/address"
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -41,30 +41,24 @@
 
         </LinearLayout>
 
-        <Spinner
-            android:textColor="@android:color/white"
-            android:id="@+id/category_spinner"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:text="Описание:"/>
+                android:text="Почтовый индекс:"
+                android:textColor="@android:color/darker_gray"/>
 
             <EditText
-                android:id="@+id/description_edittext"
+                android:id="@+id/index"
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="Задний рычаг для ford kuga"/>
+                tools:text="Рычаг"/>
 
         </LinearLayout>
 
@@ -74,65 +68,21 @@
             android:orientation="horizontal">
 
             <TextView
-                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:text="№ товара:"/>
+                android:text="Мобильный телефон:"
+                android:textColor="@android:color/darker_gray"/>
 
             <EditText
-                android:textColor="@android:color/darker_gray"
-                android:id="@+id/number_edittext"
+                android:id="@+id/phone"
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                tools:text="23-JFD-4832"/>
+                tools:text="Рычаг"/>
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:textColor="@android:color/darker_gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:text="Количество единиц:"/>
-
-            <EditText
-                android:id="@+id/count_edittext"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                tools:text="55"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <TextView
-                android:textColor="@android:color/darker_gray"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="8dp"
-                android:text="Цена за единицу:"/>
-
-            <EditText
-                android:id="@+id/price_edittext"
-                style="@style/ButtonStyle"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="number"
-                tools:text="55"/>
-
-        </LinearLayout>
 
     </LinearLayout>
 
@@ -143,12 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:layout_marginTop="4dp"
-        android:onClick="onAddProduct"
-        android:text="Добавить товар"/>
-
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/products_recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:onClick="onPayClick"
+        android:text="Оплатить"/>
 
 </LinearLayout>

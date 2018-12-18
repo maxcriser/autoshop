@@ -6,6 +6,7 @@ import android.widget.TextView;
 
 import com.example.maksim_zakharenka.autoshop.AppSettings;
 import com.example.maksim_zakharenka.autoshop.R;
+import com.example.maksim_zakharenka.autoshop.Toolbar;
 import com.example.maksim_zakharenka.autoshop.executable.AccountInfoExecutable;
 import com.example.maksim_zakharenka.autoshop.model.AccountModel;
 
@@ -15,6 +16,7 @@ public class MyProfileActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_profile);
+        ((Toolbar)findViewById(R.id.toolbar)).showBackView();
 
         final AccountModel accountModel = new AccountInfoExecutable(AppSettings.getUserName()).execute();
 

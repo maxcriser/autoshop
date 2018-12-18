@@ -6,16 +6,22 @@ public final class ProductModel {
     private final String mCategory;
     private final String mDescription;
     private final String mNumber;
+    private final String mPhotoPath;
     private final int mCount;
     private final int mPrice;
 
-    public ProductModel(final String pName, final String pCategory, final String pDescription, final String pNumber, final int pCount, final int pPrice) {
+    public ProductModel(final String pName, final String pCategory, final String pDescription, final String pNumber, final int pCount, final int pPrice, final String pPhotoPath) {
         mName = pName;
         mCategory = pCategory;
         mDescription = pDescription;
         mNumber = pNumber;
         mCount = pCount;
         mPrice = pPrice;
+        mPhotoPath = pPhotoPath;
+    }
+
+    public String getPhotoPath() {
+        return mPhotoPath;
     }
 
     public int getCount() {
@@ -59,5 +65,7 @@ public final class ProductModel {
         public static final String NUMBER = "number";
 
         public static final String PRICE = "price";
+
+        public static final String PHOTO = "photo";
     }
 }

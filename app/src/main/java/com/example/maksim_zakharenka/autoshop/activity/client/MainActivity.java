@@ -18,6 +18,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(new Intent(this, MyTrashActivity.class));
     }
 
+    public void onMyOrdersClick(final View view) {
+        startActivity(new Intent(this, MyOrdersActivity.class));
+    }
+
     public void onProductsClick(final View view) {
         startActivity(new Intent(this, ProductsActivity.class));
     }

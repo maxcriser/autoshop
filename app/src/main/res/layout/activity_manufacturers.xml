@@ -9,6 +9,7 @@
     tools:context=".activity.admin.ManufacturersActivity">
 
     <com.example.maksim_zakharenka.autoshop.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp" />
@@ -26,11 +27,11 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:text="Название:"
-                android:textColor="@android:color/darker_gray" />
+                android:text="Название:" />
 
             <EditText
                 android:id="@+id/name_edittext"
@@ -47,12 +48,12 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
 
-                android:text="Страна:"
-                android:textColor="@android:color/darker_gray" />
+                android:text="Страна:"/>
 
             <EditText
                 android:id="@+id/country_edittext"
@@ -70,11 +71,11 @@
             android:orientation="horizontal">
 
             <TextView
+                android:textColor="@android:color/darker_gray"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="8dp"
-                android:text="Сайт:"
-                android:textColor="@android:color/darker_gray" />
+                android:text="Сайт:" />
 
             <EditText
                 android:id="@+id/site_edittext"

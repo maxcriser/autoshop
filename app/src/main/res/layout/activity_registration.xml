@@ -12,6 +12,7 @@
         android:orientation="vertical">
 
         <com.example.maksim_zakharenka.autoshop.Toolbar
+            android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp" />
@@ -24,8 +25,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:hint="Введите логин"
-            android:padding="8dp"
-            android:textColor="@android:color/black" />
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/password_edittext"
@@ -37,8 +37,7 @@
             android:layout_marginRight="16dp"
             android:hint="Введите пароль"
             android:inputType="textPassword"
-            android:padding="8dp"
-            android:textColor="@android:color/black" />
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/password_confirm_edittext"
@@ -50,8 +49,7 @@
             android:layout_marginRight="16dp"
             android:hint="Повторите пароль"
             android:inputType="textPassword"
-            android:padding="8dp"
-            android:textColor="@android:color/black" />
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/full_name_edittext"
@@ -62,8 +60,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="16dp"
             android:hint="ФИО"
-            android:padding="8dp"
-            android:textColor="@android:color/black" />
+            android:padding="8dp" />
 
         <EditText
             android:id="@+id/country_edittext"
@@ -74,8 +71,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="16dp"
             android:hint="Страна проживания"
-            android:padding="8dp"
-            android:textColor="@android:color/black" />
+            android:padding="8dp" />
 
         <Button
             android:id="@+id/reg_button"

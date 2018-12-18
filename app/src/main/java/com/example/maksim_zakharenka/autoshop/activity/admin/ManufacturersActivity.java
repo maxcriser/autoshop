@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.example.maksim_zakharenka.autoshop.DialogUtils;
 import com.example.maksim_zakharenka.autoshop.R;
 import com.example.maksim_zakharenka.autoshop.StringUtils;
+import com.example.maksim_zakharenka.autoshop.Toolbar;
 import com.example.maksim_zakharenka.autoshop.adapter.ManufacturersAdapter;
 import com.example.maksim_zakharenka.autoshop.database.DatabaseHolder;
 import com.example.maksim_zakharenka.autoshop.executable.check.CheckManufacturerExistExecutable;
@@ -48,6 +49,7 @@ public class ManufacturersActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manufacturers);
+        ((Toolbar)findViewById(R.id.toolbar)).showBackView();
 
         updateRecyclerView();
     }

@@ -1,55 +1,37 @@
 package com.example.maksim_zakharenka.autoshop.activity.client;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
-import android.widget.TextView;
 
 import com.example.maksim_zakharenka.autoshop.R;
 import com.example.maksim_zakharenka.autoshop.Toolbar;
-import com.example.maksim_zakharenka.autoshop.adapter.MyTrashAdapter;
-import com.example.maksim_zakharenka.autoshop.executable.MyTrashExecutable;
-import com.example.maksim_zakharenka.autoshop.model.ProductModel;
+import com.example.maksim_zakharenka.autoshop.adapter.MyOrdersAdapter;
+import com.example.maksim_zakharenka.autoshop.executable.MyOrdersExecutable;
+import com.example.maksim_zakharenka.autoshop.model.OrderModel;
 
 import java.util.List;
 
-public class MyTrashActivity extends AppCompatActivity {
+public class MyOrdersActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my_trash);
-        ((Toolbar)findViewById(R.id.toolbar)).showBackView();
+        setContentView(R.layout.activity_my_orders);
+        ((Toolbar) findViewById(R.id.toolbar)).showBackView();
 
         updateRecyclerView();
-    }
-
-    @SuppressLint("SetTextI18n")
-    private void updateFullPrice(final List<ProductModel> trashProductModelList) {
-        final TextView fullPrice = findViewById(R.id.full_price);
-        fullPrice.setText("Общая стоимость: " + String.valueOf(getFullPriceString(trashProductModelList)) + "$");
-    }
-
-    private long getFullPriceString(final List<ProductModel> trashProductModelList) {
-        long price = 0;
-
-        for (final ProductModel productModel : trashProductModelList) {
-            price += productModel.getPrice() * productModel.getCount();
-        }
-
-        return price;
     }
 
     private void updateRecyclerView() {
         final RecyclerView recyclerView = findViewById(R.id.tra_recycler_view);
 
-        final List<ProductModel> trashProductModelList = new MyTrashExecutable().execute();
+        final List<OrderModel> trashOrderModelList = new MyOrdersExecutable().execute();
 
-        if (trashProductModelList != null && trashProductModelList.isEmpty()) {
+        if (trashOrderModelList != null && trashOrderModelList.isEmpty()) {
             showEmptyView();
 
             return;
@@ -57,9 +39,7 @@ public class MyTrashActivity extends AppCompatActivity {
             hideEmptyView();
         }
 
-        updateFullPrice(trashProductModelList);
-
-        final MyTrashAdapter mAdapter = new MyTrashAdapter(trashProductModelList);
+        final MyOrdersAdapter mAdapter = new MyOrdersAdapter(trashOrderModelList);
 
         final RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(mLayoutManager);

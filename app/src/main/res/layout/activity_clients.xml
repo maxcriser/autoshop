@@ -1,30 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/brandColor"
-    android:orientation="vertical"
-    android:padding="16dp"
-    tools:context=".activity.admin.ClientsActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/brandColor"
+              android:orientation="vertical"
+              android:padding="16dp"
+              tools:context=".activity.admin.ClientsActivity">
+
+    <com.example.maksim_zakharenka.autoshop.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/clients_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"/>
 
     <TextView
         android:id="@+id/empty_view"
+        style="@style/ButtonStyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/brandColor"
         android:gravity="center"
-        android:text="Список клиентов пуст"
-        android:textColor="@android:color/darker_gray" />
+        android:text="Список клиентов пуст"/>
 
-    <com.example.maksim_zakharenka.autoshop.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp" />
-
-</FrameLayout>
+</LinearLayout>

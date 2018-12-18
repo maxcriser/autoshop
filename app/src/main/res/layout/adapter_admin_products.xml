@@ -1,12 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical">
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
 
     <FrameLayout
         android:id="@+id/cv"
         style="@style/ButtonStyle"
+        android:layout_marginBottom="4dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -15,6 +16,17 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
+            <ImageView
+                android:id="@+id/photo"
+                android:layout_width="112dp"
+                android:layout_height="112dp"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"
+                tools:text="23"/>
+
             <TextView
                 android:id="@+id/count"
                 android:layout_width="wrap_content"
@@ -22,8 +34,10 @@
                 android:layout_gravity="center"
                 android:layout_margin="16dp"
                 android:gravity="center"
+                android:visibility="gone"
+                android:textColor="@android:color/white"
                 android:textSize="24sp"
-                tools:text="23" />
+                tools:text="23"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -35,27 +49,31 @@
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
                     android:textSize="16sp"
                     android:textStyle="bold"
-                    tools:text="название" />
+                    tools:text="название"/>
 
                 <TextView
                     android:id="@+id/category"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="категория" />
+                    android:textColor="@android:color/darker_gray"
+                    tools:text="категория"/>
 
                 <TextView
                     android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="описание" />
+                    android:textColor="@android:color/darker_gray"
+                    tools:text="описание"/>
 
                 <TextView
                     android:id="@+id/number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    tools:text="уникальный номер" />
+                    android:textColor="@android:color/darker_gray"
+                    tools:text="уникальный номер"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -66,12 +84,14 @@
                         android:id="@+id/price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text="уникальный номер" />
+                        android:textColor="@android:color/darker_gray"
+                        tools:text="уникальный номер"/>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        tools:text=" $" />
+                        android:textColor="@android:color/darker_gray"
+                        tools:text=" $"/>
 
                 </LinearLayout>
 
@@ -81,6 +101,6 @@
 
     </FrameLayout>
 
-    <include layout="@layout/view_divider" />
+    <include layout="@layout/view_divider"/>
 
 </LinearLayout>

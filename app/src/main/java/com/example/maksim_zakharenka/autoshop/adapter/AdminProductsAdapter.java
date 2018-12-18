@@ -5,11 +5,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.example.maksim_zakharenka.autoshop.R;
 import com.example.maksim_zakharenka.autoshop.model.ProductModel;
+import com.squareup.picasso.Picasso;
 
+import java.io.File;
 import java.util.List;
 
 public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdapter.AdminProductsViewHolder> {
@@ -18,6 +21,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
 
     class AdminProductsViewHolder extends RecyclerView.ViewHolder {
 
+        ImageView mPhoto;
         TextView mName;
         TextView mCategory;
         TextView mDescription;
@@ -34,6 +38,7 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
             mNumber = (TextView) view.findViewById(R.id.number);
             mCount = (TextView) view.findViewById(R.id.count);
             mPrice = (TextView) view.findViewById(R.id.price);
+            mPhoto = (ImageView) view.findViewById(R.id.photo);
         }
     }
 
@@ -52,6 +57,10 @@ public class AdminProductsAdapter extends RecyclerView.Adapter<AdminProductsAdap
     @Override
     public void onBindViewHolder(@NonNull final AdminProductsViewHolder holder, final int position) {
         final ProductModel item = mList.get(position);
+
+        Picasso.with(holder.itemView.getContext())
+                .load(new File(item.getPhotoPath()))
+                .into(holder.mPhoto);
 
         holder.mName.setText(item.getName());
         holder.mCategory.setText(item.getCategory());

@@ -2,7 +2,7 @@
     <string name="ADMIN_PASSWORD">admin</string>
     <string name="ADMIN_LOGIN">admin</string>
 
-    <string name="app_name">AutoShop</string>
+    <string name="app_name">Auto Formula</string>
 
     <string-array name="product_categories">
         <item>Test 1</item>

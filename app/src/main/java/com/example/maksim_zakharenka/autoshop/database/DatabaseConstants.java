@@ -3,6 +3,7 @@ package com.example.maksim_zakharenka.autoshop.database;
 import com.example.maksim_zakharenka.autoshop.model.AccountModel;
 import com.example.maksim_zakharenka.autoshop.model.CategoryModel;
 import com.example.maksim_zakharenka.autoshop.model.ManufacturerModel;
+import com.example.maksim_zakharenka.autoshop.model.OrderModel;
 import com.example.maksim_zakharenka.autoshop.model.ProductModel;
 import com.example.maksim_zakharenka.autoshop.model.TrashModel;
 
@@ -51,6 +52,7 @@ public class DatabaseConstants {
                         ProductModel.Model.ID + " INTEGER PRIMARY KEY," +
                         ProductModel.Model.COUNT + " INT," +
                         ProductModel.Model.NAME + " TEXT," +
+                        ProductModel.Model.PHOTO + " TEXT," +
                         ProductModel.Model.PRICE + " TEXT," +
                         ProductModel.Model.DESCRIPTION + " TEXT," +
                         ProductModel.Model.NUMBER + " TEXT," +
@@ -68,5 +70,16 @@ public class DatabaseConstants {
 
         String SQL_DELETE_TRASH_ENTRIES =
                 "DROP TABLE IF EXISTS " + TrashModel.Model.TABLE;
+
+        String SQL_CREATE_ORDER_ENTRIES =
+                "CREATE TABLE " + OrderModel.Model.TABLE + " (" +
+                        OrderModel.Model.ID + " INTEGER PRIMARY KEY," +
+                        OrderModel.Model.ADDRESS + " TEXT," +
+                        OrderModel.Model.CLIENT + " TEXT," +
+                        OrderModel.Model.PHONE + " TEXT," +
+                        OrderModel.Model.INDEX + " TEXT)";
+
+        String SQL_DELETE_ORDER_ENTRIES =
+                "DROP TABLE IF EXISTS " + OrderModel.Model.TABLE;
     }
 }

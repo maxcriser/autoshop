@@ -41,7 +41,7 @@ public class CheckProductExistExecutable {
         while (cursor.moveToNext()) {
             final String number = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.NUMBER));
 
-            return new ProductModel(null, null, null, number, 0, 0);
+            return new ProductModel(null, null, null, number, 0, 0, null);
         }
 
         cursor.close();

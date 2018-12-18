@@ -1,25 +1,16 @@
 package com.example.maksim_zakharenka.autoshop.executable;
 
-import com.example.maksim_zakharenka.autoshop.model.ProductModel;
-import com.example.maksim_zakharenka.autoshop.model.TrashModel;
+import com.example.maksim_zakharenka.autoshop.model.OrderModel;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class MyTrashExecutable {
+public class MyOrdersExecutable {
 
-    public MyTrashExecutable() {
+    public MyOrdersExecutable() {
 
     }
 
-    public List<ProductModel> execute() {
-        final List<TrashModel> trashModelList = new TrashBySavedUsernameExecutable().execute();
-        final List<ProductModel> trashProducts = new ArrayList<>();
-
-        for (final TrashModel trashModel : trashModelList) {
-            trashProducts.add(new ProductByNumberExecutable(trashModel.getNumber()).execute());
-        }
-
-        return trashProducts;
+    public List<OrderModel> execute() {
+        return new OrderBySavedUsernameExecutable().execute();
     }
 }

@@ -14,15 +14,16 @@
         android:layout_height="wrap_content" />
 
     <TextView
+        style="@style/ButtonStyle"
         android:id="@+id/empty_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/brandColor"
         android:gravity="center"
-        android:text="Список заказов пуст"
-        android:textColor="@android:color/darker_gray" />
+        android:text="Список заказов пуст" />
 
     <com.example.maksim_zakharenka.autoshop.Toolbar
+        android:id="@+id/toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp" />

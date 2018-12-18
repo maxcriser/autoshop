@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@color/secondBrandColor"
-    android:clickable="true"
-    android:focusable="true">
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:background="@color/secondBrandColor"
+             android:clickable="true"
+             android:focusable="true">
 
     <FrameLayout
         android:id="@+id/second_background_toolbar_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"/>
 
     <FrameLayout
         android:id="@+id/toolbar_view_container"
@@ -26,8 +26,8 @@
                 android:id="@+id/toolbar_left_frame"
                 android:layout_width="?attr/actionBarSize"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_alignParentStart="true"
                 android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
                 android:minWidth="?attr/actionBarSize"
                 android:padding="12dp">
 
@@ -40,7 +40,7 @@
                     android:src="@drawable/ic_back"
                     android:tint="@android:color/white"
                     android:visibility="gone"
-                    tools:visibility="visible" />
+                    tools:visibility="visible"/>
 
             </FrameLayout>
 
@@ -49,15 +49,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_centerInParent="true"
-                android:layout_toStartOf="@+id/toolbar_right_frame"
-                android:layout_toLeftOf="@+id/toolbar_right_frame"
                 android:layout_toEndOf="@+id/toolbar_left_frame"
+                android:layout_toLeftOf="@+id/toolbar_right_frame"
                 android:layout_toRightOf="@+id/toolbar_left_frame"
+                android:layout_toStartOf="@+id/toolbar_right_frame"
                 android:gravity="center"
-                android:text="Магазин автозапчастей"
+                android:textAllCaps="true"
+                android:text="@string/app_name"
                 android:textColor="@android:color/white"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textSize="16sp"/>
 
             <LinearLayout
                 android:id="@+id/toolbar_right_frame"

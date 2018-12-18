@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.example.maksim_zakharenka.autoshop.R;
+import com.example.maksim_zakharenka.autoshop.Toolbar;
 import com.example.maksim_zakharenka.autoshop.adapter.ProductsAdapter;
 import com.example.maksim_zakharenka.autoshop.callback.IUpdate;
 import com.example.maksim_zakharenka.autoshop.executable.ProductsExecutable;
@@ -21,6 +22,7 @@ public class ProductsActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_products);
+        ((Toolbar) findViewById(R.id.toolbar)).showBackView();
 
         updateRecyclerView();
     }

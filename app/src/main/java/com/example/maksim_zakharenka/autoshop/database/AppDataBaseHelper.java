@@ -15,6 +15,7 @@ public class AppDataBaseHelper extends SQLiteOpenHelper {
         db.execSQL(DatabaseConstants.SQL.SQL_CREATE_MANUFACTURER_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_CREATE_CATEGORY_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_CREATE_PRODUCT_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_CREATE_ORDER_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_CREATE_TRASH_ENTRIES);
     }
 
@@ -23,6 +24,7 @@ public class AppDataBaseHelper extends SQLiteOpenHelper {
         db.execSQL(DatabaseConstants.SQL.SQL_DELETE_MANUFACTURER_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_DELETE_CATEGORY_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_DELETE_PRODUCT_ENTRIES);
+        db.execSQL(DatabaseConstants.SQL.SQL_DELETE_ORDER_ENTRIES);
         db.execSQL(DatabaseConstants.SQL.SQL_DELETE_TRASH_ENTRIES);
         onCreate(db);
     }

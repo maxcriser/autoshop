@@ -1,6 +1,7 @@
 package com.example.maksim_zakharenka.autoshop.activity.client;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.TextView;
 
 import com.example.maksim_zakharenka.autoshop.R;
+import com.example.maksim_zakharenka.autoshop.Toolbar;
 import com.example.maksim_zakharenka.autoshop.adapter.MyTrashAdapter;
 import com.example.maksim_zakharenka.autoshop.executable.MyTrashExecutable;
 import com.example.maksim_zakharenka.autoshop.model.ProductModel;
@@ -22,8 +24,14 @@ public class MyTrashActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_my_trash);
+        ((Toolbar) findViewById(R.id.toolbar)).showBackView();
 
         updateRecyclerView();
+    }
+
+    public void onPayClick(final View view) {
+        finish();
+        startActivity(new Intent(this, PayActivity.class));
     }
 
     @SuppressLint("SetTextI18n")

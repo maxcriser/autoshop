@@ -1,5 +1,6 @@
 package com.example.maksim_zakharenka.autoshop;
 
+import android.app.Activity;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.view.View;
@@ -47,8 +48,14 @@ public class Toolbar extends RelativeLayout {
         mTitle.setText(pTitle);
     }
 
-    public void showBackView(final OnClickListener pOnClickListener) {
+    public void showBackView() {
         mBackView.setVisibility(View.VISIBLE);
-        mBackView.setOnClickListener(pOnClickListener);
+        mBackView.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(final View v) {
+                ((Activity) v.getContext()).onBackPressed();
+            }
+        });
     }
 }

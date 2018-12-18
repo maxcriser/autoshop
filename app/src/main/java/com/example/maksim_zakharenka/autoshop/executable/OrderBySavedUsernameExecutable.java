@@ -6,36 +6,37 @@ import android.database.sqlite.SQLiteDatabase;
 import com.example.maksim_zakharenka.autoshop.AppSettings;
 import com.example.maksim_zakharenka.autoshop.database.AppDataBaseHelper;
 import com.example.maksim_zakharenka.autoshop.database.DatabaseHolder;
-import com.example.maksim_zakharenka.autoshop.model.TrashModel;
+import com.example.maksim_zakharenka.autoshop.model.OrderModel;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class TrashBySavedUsernameExecutable {
+public class OrderBySavedUsernameExecutable {
 
     private final AppDataBaseHelper mAppDataBaseHelper;
 
-    public TrashBySavedUsernameExecutable() {
+    public OrderBySavedUsernameExecutable() {
         mAppDataBaseHelper = DatabaseHolder.get();
     }
 
-    public List<TrashModel> execute() {
-        final List<TrashModel> list = new ArrayList<>();
+    public List<OrderModel> execute() {
+        final List<OrderModel> list = new ArrayList<>();
 
         final SQLiteDatabase db = mAppDataBaseHelper.getReadableDatabase();
 
         final String[] projection = {
-                TrashModel.Model.ID,
-                TrashModel.Model.COUNT,
-                TrashModel.Model.NUMBER,
-                TrashModel.Model.CLIENT
+                OrderModel.Model.ID,
+                OrderModel.Model.CLIENT,
+                OrderModel.Model.ADDRESS,
+                OrderModel.Model.INDEX,
+                OrderModel.Model.PHONE
         };
 
-        final String selection = TrashModel.Model.CLIENT + " = ?";
+        final String selection = OrderModel.Model.CLIENT + " = ?";
         final String[] selectionArgs = new String[]{AppSettings.getUserName()};
 
         final Cursor cursor = db.query(
-                TrashModel.Model.TABLE,
+                OrderModel.Model.TABLE,
                 projection,
                 selection,
                 selectionArgs,
@@ -45,11 +46,12 @@ public class TrashBySavedUsernameExecutable {
         );
 
         while (cursor.moveToNext()) {
-            final String client = cursor.getString(cursor.getColumnIndexOrThrow(TrashModel.Model.CLIENT));
-            final String number = cursor.getString(cursor.getColumnIndexOrThrow(TrashModel.Model.NUMBER));
-            final int count = cursor.getInt(cursor.getColumnIndexOrThrow(TrashModel.Model.COUNT));
+            final String phone = cursor.getString(cursor.getColumnIndexOrThrow(OrderModel.Model.PHONE));
+            final String client = cursor.getString(cursor.getColumnIndexOrThrow(OrderModel.Model.CLIENT));
+            final String index = cursor.getString(cursor.getColumnIndexOrThrow(OrderModel.Model.ID));
+            final String address = cursor.getString(cursor.getColumnIndexOrThrow(OrderModel.Model.ADDRESS));
 
-            list.add(new TrashModel(client, number, count));
+            list.add(new OrderModel(client, address, index, phone));
         }
 
         cursor.close();

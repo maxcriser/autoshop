@@ -25,6 +25,7 @@ public class ProductByNumberExecutable {
                 ProductModel.Model.COUNT,
                 ProductModel.Model.NUMBER,
                 ProductModel.Model.NAME,
+                ProductModel.Model.PHOTO,
                 ProductModel.Model.PRICE,
                 ProductModel.Model.DESCRIPTION,
                 ProductModel.Model.CATEGORY
@@ -45,13 +46,14 @@ public class ProductByNumberExecutable {
 
         while (cursor.moveToNext()) {
             final String name = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.NAME));
+            final String photo = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.PHOTO));
             final String category = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.CATEGORY));
             final String description = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.DESCRIPTION));
             final String number = cursor.getString(cursor.getColumnIndexOrThrow(ProductModel.Model.NUMBER));
             final int count = cursor.getInt(cursor.getColumnIndexOrThrow(ProductModel.Model.COUNT));
             final int price = cursor.getInt(cursor.getColumnIndexOrThrow(ProductModel.Model.PRICE));
 
-            return new ProductModel(name, category, description, number, count, price);
+            return new ProductModel(name, category, description, number, count, price, photo);
         }
 
         cursor.close();

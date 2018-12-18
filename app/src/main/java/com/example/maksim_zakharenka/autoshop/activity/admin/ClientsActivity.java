@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 import com.example.maksim_zakharenka.autoshop.R;
+import com.example.maksim_zakharenka.autoshop.Toolbar;
 import com.example.maksim_zakharenka.autoshop.adapter.ClientsAdapter;
 import com.example.maksim_zakharenka.autoshop.executable.AccountsExecutable;
 import com.example.maksim_zakharenka.autoshop.model.AccountModel;
@@ -20,6 +21,7 @@ public class ClientsActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_clients);
+        ((Toolbar)findViewById(R.id.toolbar)).showBackView();
 
         updateRecyclerView();
     }

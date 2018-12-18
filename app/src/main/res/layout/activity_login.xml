@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/brandColor">
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/brandColor">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,6 +10,13 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp"
         android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="56dp"
+            android:src="@drawable/ic_logo"/>
 
         <EditText
             android:id="@+id/login_edittext"
@@ -19,8 +26,7 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:hint="Введите логин"
-            android:padding="16dp"
-            android:textColor="@android:color/black" />
+            android:padding="16dp"/>
 
         <EditText
             android:id="@+id/password_edittext"
@@ -28,12 +34,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="8dp"
             android:layout_marginRight="16dp"
+            android:layout_marginTop="8dp"
             android:hint="Введите пароль"
             android:inputType="textPassword"
-            android:padding="16dp"
-            android:textColor="@android:color/black" />
+            android:padding="16dp"/>
 
         <Button
             android:id="@+id/login_button"
@@ -41,9 +46,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginRight="16dp"
-            android:text="Войти" />
+            android:layout_marginTop="16dp"
+            android:text="Войти"/>
 
     </LinearLayout>
 
@@ -55,7 +60,6 @@
         android:layout_marginBottom="8dp"
         android:gravity="center"
         android:text="Регистрация"
-        android:textColor="@android:color/white"
-        android:textSize="16sp" />
+        android:textSize="16sp"/>
 
 </FrameLayout>
